@@ -5,14 +5,14 @@
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  --color-navy: #0d2c54;
-  --color-teal: #3ebd93;
-  --color-gold: #f0b429;
-  --color-sand: #f5f0ea;
-  --color-slate: #4a5568;
+  --color-navy: #b32026;
+  --color-teal: #e45b4d;
+  --color-gold: #f2c9a5;
+  --color-sand: #f9eee8;
+  --color-slate: #3d2b2b;
   --radius-lg: 1.5rem;
   --radius-sm: 0.8rem;
-  --shadow: 0 20px 60px rgba(13, 44, 84, 0.1);
+  --shadow: 0 20px 60px rgba(179, 32, 38, 0.12);
 }
 
 * {
@@ -22,7 +22,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(180deg, #f9fbff 0%, #fefcf8 100%);
+  background: linear-gradient(180deg, #fff8f5 0%, #f9eee8 100%);
   color: var(--color-slate);
 }
 
@@ -129,11 +129,11 @@ a {
   border: none;
   font-weight: 600;
   font-size: 1rem;
-  background: var(--color-teal);
-  color: #042026;
+  background: var(--color-navy);
+  color: white;
   text-decoration: none;
   cursor: pointer;
-  box-shadow: 0 10px 25px rgba(62, 189, 147, 0.35);
+  box-shadow: 0 10px 25px rgba(179, 32, 38, 0.3);
 }
 
 .cta-button--secondary {
