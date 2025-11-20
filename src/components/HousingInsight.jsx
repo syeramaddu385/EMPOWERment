@@ -115,11 +115,10 @@ function HousingInsight() {
     <section className="card housing-insight">
       <div className="stack-sm">
         <p className="eyebrow">NC Housing Snapshot</p>
-        <h3>Check affordability with our mock API</h3>
+        <h3>Check affordability at a glance</h3>
         <p>
-          This widget now talks to a tiny RESTful API served by the dev server. It supports the
-          classic CRUD verbs (GET, POST, PUT, DELETE) so you can see how the same data flows through
-          each type of request.
+          Explore how home values and rents are shifting across North Carolina communities.
+          Pick a county to see the latest snapshot and compare it to recent years.
         </p>
         <form className="form" onSubmit={loadInsight}>
           <label>
@@ -133,7 +132,7 @@ function HousingInsight() {
             </select>
           </label>
           <div className="split" style={{ alignItems: 'flex-end' }}>
-            <p className="meta">Our mock API keeps responses fast and predictable for presentations.</p>
+            <p className="meta">Figures update as soon as new survey responses are added.</p>
             <button type="submit" className="cta-button">
               Check housing numbers
             </button>
@@ -162,24 +161,24 @@ function HousingInsight() {
       </div>
 
       <div className="insight-actions" aria-live="polite">
-        <p className="eyebrow">Try each CRUD request</p>
+        <p className="eyebrow">Keep the snapshot current</p>
         <div className="action-buttons">
           <button type="button" onClick={refreshRecords} disabled={state.status === 'loading'}>
-            GET all records
+            Refresh latest figures
           </button>
           <button type="button" onClick={handleCreate} disabled={state.status === 'loading'}>
-            POST a new year
+            Add next year
           </button>
           <button type="button" onClick={handleUpdate} disabled={state.status === 'loading'}>
-            PUT update latest
+            Adjust this year's rent
           </button>
           <button type="button" onClick={handleDelete} disabled={state.status === 'loading'}>
-            DELETE latest
+            Remove latest year
           </button>
         </div>
         <p className="helper-text">
           {state.message
-            || 'Use the buttons above to see how each HTTP verb changes the data returned by GET.'}
+            || 'Fine-tune the timeline to model how affordability might change next season.'}
         </p>
       </div>
     </section>
