@@ -38,7 +38,7 @@ function PeoplePage() {
 
       <section className="stack-sm">
         <div>
-          <p className="eyebrow">Team & Fellows</p>
+          <p className="eyebrow">Team</p>
           <h2>People moving the work forward</h2>
           <p>
             Update this roster as new staff, fellows, or volunteers join. Each card includes a

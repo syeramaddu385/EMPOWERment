@@ -1,0 +1,17 @@
+[
+  {
+    "year": 2021,
+    "medianHomeValue": 285000,
+    "medianRent": 1050
+  },
+  {
+    "year": 2022,
+    "medianHomeValue": 297500,
+    "medianRent": 1090
+  },
+  {
+    "year": 2023,
+    "medianHomeValue": 310000,
+    "medianRent": 1150
+  }
+]
