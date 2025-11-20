@@ -1,8 +1,8 @@
-EMPOWERment
+# EMPOWERment
 
 EMPOWERment is a web application designed to help community members connect with local resources, programs, and support services. The goal of the platform is to make navigating available assistance easier, faster, and more accessible for users.
 
-🚀 Features
+## 🚀 Features
 
 Resource Directory – Browse available programs and services.
 
@@ -12,7 +12,7 @@ Search Functionality – Find specific resources instantly.
 
 Responsive UI – Clean, simple, mobile-friendly design.
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 Frontend: HTML, CSS, JavaScript (React)
 
@@ -20,22 +20,14 @@ Backend: RESTful API (with GET/POST/PUT/DELETE endpoints)
 
 Data: JSON-based resource listings
 
-📁 Project Structure
-/public         # Static assets
-/src
-  /components   # Reusable UI components
-  /pages        # Main views/screens
-  /api          # API request functions
-  App.jsx       # Main application entry
-
-🔧 Setup & Installation
+## 🔧 Setup & Installation
 
 Clone the repository:
 
 git clone <repo-url>
 
 
-Install dependencies:
+## Install dependencies:
 
 npm install
 
@@ -44,7 +36,7 @@ Start the development server:
 
 npm start
 
-📡 API Overview
+## 📡 API Overview
 
 The backend follows standard RESTful CRUD design:
 
