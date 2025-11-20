@@ -1,0 +1,32 @@
+<svg width="900" height="520" viewBox="0 0 900 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F9EEE8" />
+      <stop offset="100%" stop-color="#F2C9A5" />
+    </linearGradient>
+  </defs>
+  <rect width="900" height="520" rx="24" fill="url(#bg)"/>
+  <rect x="40" y="40" width="820" height="440" rx="18" fill="white" stroke="#E45B4D" stroke-width="6" stroke-dasharray="16 16"/>
+  <text x="70" y="120" font-family="'Inter', sans-serif" font-size="32" font-weight="700" fill="#B32026">Board of Directors Snapshot</text>
+  <text x="70" y="170" font-family="'Inter', sans-serif" font-size="18" fill="#3D2B2B">Replace this placeholder with your embedded board screenshot.</text>
+  <g transform="translate(70 220)">
+    <rect width="160" height="200" rx="14" fill="#F9EEE8" stroke="#B32026" />
+    <rect x="20" y="24" width="120" height="120" rx="60" fill="#E45B4D" />
+    <text x="36" y="195" font-family="'Inter', sans-serif" font-size="16" font-weight="600" fill="#3D2B2B">Chair</text>
+  </g>
+  <g transform="translate(270 220)">
+    <rect width="160" height="200" rx="14" fill="#F9EEE8" stroke="#B32026" />
+    <rect x="20" y="24" width="120" height="120" rx="60" fill="#E45B4D" />
+    <text x="32" y="195" font-family="'Inter', sans-serif" font-size="16" font-weight="600" fill="#3D2B2B">Vice Chair</text>
+  </g>
+  <g transform="translate(470 220)">
+    <rect width="160" height="200" rx="14" fill="#F9EEE8" stroke="#B32026" />
+    <rect x="20" y="24" width="120" height="120" rx="60" fill="#E45B4D" />
+    <text x="48" y="195" font-family="'Inter', sans-serif" font-size="16" font-weight="600" fill="#3D2B2B">Treasurer</text>
+  </g>
+  <g transform="translate(670 220)">
+    <rect width="160" height="200" rx="14" fill="#F9EEE8" stroke="#B32026" />
+    <rect x="20" y="24" width="120" height="120" rx="60" fill="#E45B4D" />
+    <text x="48" y="195" font-family="'Inter', sans-serif" font-size="16" font-weight="600" fill="#3D2B2B">Secretary</text>
+  </g>
+</svg>

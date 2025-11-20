@@ -26,9 +26,11 @@ function ProgramsPage() {
             <p>{program.summary}</p>
             <p className="eyebrow">Focus: {program.focus}</p>
             <p className="stat">{program.impact}</p>
-            <button type="button" className="cta-button cta-button--ghost">
-              Download one-pager
-            </button>
+            <ul className="list-checks">
+              {program.details.map((detail) => (
+                <li key={detail}>{detail}</li>
+              ))}
+            </ul>
           </article>
         ))}
       </section>

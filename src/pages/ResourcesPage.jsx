@@ -1,4 +1,4 @@
-import { resources } from '../data/content.js';
+import { resources, resourceHighlights } from '../data/content.js';
 
 function ResourcesPage() {
   return (
@@ -8,12 +8,22 @@ function ResourcesPage() {
         <h1>Navigate housing questions with confidence</h1>
         <p>
           We collect verified tools and partners so families spend less time researching and
-          more time thriving. Use the quick links or download our full housing guide.
+          more time thriving. Everything you need is embedded here—no PDFs to download.
         </p>
-        <button type="button" className="cta-button">
-          Download resource guide (PDF)
-        </button>
       </header>
+
+      <section className="grid-3">
+        {resourceHighlights.map((highlight) => (
+          <article key={highlight.title} className="card">
+            <p className="eyebrow">{highlight.title}</p>
+            <ul className="list-checks">
+              {highlight.items.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </section>
 
       <section className="grid-3">
         {resources.map((resource) => (
