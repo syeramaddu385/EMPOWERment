@@ -1,10 +1,10 @@
-import { Routes, Route } from 'react-router-dom';
-import NavBar from './components/NavBar.jsx';
-import Footer from './components/Footer.jsx';
-import HomePage from './pages/HomePage.jsx';
-import ProgramsPage from './pages/ProgramsPage.jsx';
-import ResourcesPage from './pages/ResourcesPage.jsx';
-import VolunteerPage from './pages/VolunteerPage.jsx';
+import { Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar.jsx";
+import Footer from "./components/Footer.jsx";
+import HomePage from "./pages/HomePage.jsx";
+import ProgramsPage from "./pages/ProgramsPage.jsx";
+import ResourcesPage from "./pages/ResourcesPage.jsx";
+import VolunteerPage from "./pages/VolunteerPage.jsx";
 
 function App() {
   return (
