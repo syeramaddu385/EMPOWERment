@@ -1,29 +1,57 @@
-# EMPOWERment Inc React Site
+EMPOWERment
 
-A modern React + Vite site concept for [EMPOWERment Inc](https://www.empowermentinc.org/), a
-nonprofit dedicated to affordable housing, economic development, and youth leadership in
-Chapel Hill and Carrboro, North Carolina.
+EMPOWERment is a web application designed to help community members connect with local resources, programs, and support services. The goal of the platform is to make navigating available assistance easier, faster, and more accessible for users.
 
-## Features
+🚀 Features
 
-- Multi-page layout (Home, Programs, Resources, Volunteer) powered by React Router.
-- Volunteer opportunity cards and an accessible interest form with client-side validation.
-- Housing affordability insights fetched from the public [DataUSA API](https://datausa.io/).
-- Responsive design system with reusable cards, hero, and timeline components.
+Resource Directory – Browse available programs and services.
 
-## Getting started
+Category & State Filters – Quickly narrow down results to what you need.
 
-```bash
+Search Functionality – Find specific resources instantly.
+
+Responsive UI – Clean, simple, mobile-friendly design.
+
+🛠️ Tech Stack
+
+Frontend: HTML, CSS, JavaScript (React)
+
+Backend: RESTful API (with GET/POST/PUT/DELETE endpoints)
+
+Data: JSON-based resource listings
+
+📁 Project Structure
+/public         # Static assets
+/src
+  /components   # Reusable UI components
+  /pages        # Main views/screens
+  /api          # API request functions
+  App.jsx       # Main application entry
+
+🔧 Setup & Installation
+
+Clone the repository:
+
+git clone <repo-url>
+
+
+Install dependencies:
+
 npm install
-npm run dev
-```
 
-Visit `http://localhost:5173` to explore the site.
 
-## Project guidelines reference
+Start the development server:
 
-This project follows the CS+SG Education Team final project requirements:
+npm start
 
-- **React fundamentals**: hooks, component architecture, routing, and readable styling.
-- **Social good focus**: highlights resources and action steps for a real nonprofit.
-- **Additional feature**: API integration via DataUSA housing statistics.
+📡 API Overview
+
+The backend follows standard RESTful CRUD design:
+
+GET – Retrieve resources
+
+POST – Add a new resource
+
+PUT – Update an existing resource
+
+DELETE – Remove a resource
