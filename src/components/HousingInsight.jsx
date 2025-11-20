@@ -1,13 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 
-import { housingInsights } from '../../mock-data/housingInsights.js';
-
 const API_URL = '/api/housing';
-const LOCATION_OPTIONS = housingInsights.map((entry) => ({ value: entry.id, label: entry.location }));
 
 function HousingInsight() {
-  const [selection, setSelection] = useState(LOCATION_OPTIONS[0]?.value || '');
-  const [insight, setInsight] = useState({ status: 'idle', data: housingInsights[0] || null, message: '' });
   const [state, setState] = useState({ status: 'idle', records: [], message: '' });
 
   const latestRecord = useMemo(
@@ -99,18 +94,6 @@ function HousingInsight() {
     refreshRecords();
   }, []);
 
-  const loadInsight = (event) => {
-    event.preventDefault();
-
-    const selectedInsight = housingInsights.find((entry) => entry.id === selection);
-    if (!selectedInsight) {
-      setInsight({ status: 'error', data: null, message: 'Please choose a location to view insights.' });
-      return;
-    }
-
-    setInsight({ status: 'success', data: selectedInsight, message: 'Updated housing snapshot.' });
-  };
-
   return (
     <section className="card housing-insight">
       <div className="stack-sm">
@@ -118,26 +101,9 @@ function HousingInsight() {
         <h3>Check affordability at a glance</h3>
         <p>
           Explore how home values and rents are shifting across North Carolina communities.
-          Pick a county to see the latest snapshot and compare it to recent years.
+          The latest snapshot updates automatically when the dataset changes.
         </p>
-        <form className="form" onSubmit={loadInsight}>
-          <label>
-            Choose a location
-            <select value={selection} onChange={(event) => setSelection(event.target.value)}>
-              {LOCATION_OPTIONS.map((option) => (
-                <option key={option.value} value={option.value}>
-                  {option.label}
-                </option>
-              ))}
-            </select>
-          </label>
-          <div className="split" style={{ alignItems: 'flex-end' }}>
-            <p className="meta">Figures update as soon as new survey responses are added.</p>
-            <button type="submit" className="cta-button">
-              Check housing numbers
-            </button>
-          </div>
-        </form>
+        <p className="meta">Figures update as soon as new survey responses are added.</p>
       </div>
 
       <div className="insight-grid" aria-live="polite">
@@ -155,8 +121,10 @@ function HousingInsight() {
               <span className="stat">${latestRecord.medianRent?.toLocaleString()}</span>
               <span className="stat-label">Median monthly rent ({latestRecord.year})</span>
             </p>
-            {insight?.data?.note && <p className="meta">{insight.data.note}</p>}
           </>
+        )}
+        {state.status === 'success' && !latestRecord && (
+          <p className="meta">No housing records are available yet. Try adding a new year.</p>
         )}
       </div>
 
