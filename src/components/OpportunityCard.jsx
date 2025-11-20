@@ -16,9 +16,6 @@ function OpportunityCard({ opportunity }) {
           <dd>{opportunity.location}</dd>
         </div>
       </dl>
-      <button type="button" className="cta-button cta-button--ghost">
-        Learn more
-      </button>
     </article>
   );
 }
